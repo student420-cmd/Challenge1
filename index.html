@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<title>Challenge 1</title>
+	</head>
+<body>
+	<header>
+		<nav></nav>
+	</header>
+	<main>
+		
+		<div class="container">
+			<canvas id="myChart"></canvas>
+		</div>
+		<script>
+			var myChart = document.getElementById('myChart').getContext('2d');
+			var Chart = new Chart(myChart, {
+				type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+				data:{
+					labels:['0','20','40','60','80','100','120','140','140','160','180','200','220','240','260','280','300','320','340','360','380','400','420','440','460','480','500'],
+					datasets:[{
+						label:'Distance Traveled',
+							data:[0,1244,5377,11617,19672,31412,44726,57396,67893,77485,85662,92481,98004,102301,105321,107449,108619,109789,110959,112129,113299,114469,115639,116809,117979,119149,120319],
+						borderColor: [ 'rgba(255,255,255,1)'],
+						backgroundColor:['rgba(255,255,255,1)']
+				}],
+					
+			},
+			options:{
+				legend:{
+					display:false,
+					labels:{
+						fontColor:'rgba(255,255,255,1)',
+						defaultFontFamily:"D-DIN",
+						backgroundColor: 'rgba(255,255,255,1)'
+					}
+				},
+				scales:{
+					yAxes:[{
+						gridLines:{
+							color: 'rgba(255,255,255,0.1)'
+						},
+						display:true,
+						color:'white',
+						ticks:{
+							fontColor: "white"
+						}
+					}],
+					xAxes:[{
+						gridLines:{
+							color: 'rgba(255,255,255,0.1)'
+						},
+						labelString:'Number of seconds',
+						display:true,
+						color:'white',
+						ticks:{
+							fontColor: "white"
+						}
+					}]
+				}
+				
+			}
+			
+			
+		});
+			
+	</script>
+	</main>
+	<footer>
+	
+	</footer>
+</body>
+</html>
