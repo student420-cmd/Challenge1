@@ -35,15 +35,21 @@
 
 body {
 	background-color:black;
-}
-p {
-	font-family: D-DIN-Bold;
 	color:white;
-	font-size:3em;
+	font-family:D-DIN-Bold;
+	margin:0;
 }
+
 .container {
 	position:relative;
-	
+	align-items: center;
 	width:800px;
+	text-align:center;
+}
+.logo {
+	color:white;
+	width:10%;
+	
+	
 }
 
