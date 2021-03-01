@@ -34,7 +34,10 @@
 }
 
 body {
-	background-color:black;
+	background-image: url("../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	color:white;
 	font-family:D-DIN-Bold;
 	margin:0;
@@ -45,15 +48,18 @@ h1, p {
 }
 .dashboard {
 	text-align: center;
+	text
 
 }
 .container {
+	background-color:black;
 	position:relative;
 	align-items: center;
 	text-align:center;
 	margin:1% 30px 30px 30px;
 	border:2px solid white;
 	padding: 5%;
+	box-shadow: 5px 10px 12px black;
 }
 .logo {
 	color:white;
