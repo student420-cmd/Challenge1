@@ -79,6 +79,7 @@ var dataPolar = {
 			borderColor: ['rgba(0,152,245,1)','rgba(13,245,61,1)','rgba(245,44,44,1)'],
 			data:[5,6,7],
 			
+			
 		}
 	]
 }
